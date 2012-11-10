@@ -3,7 +3,6 @@ set showcmd
 
 filetype on
 filetype plugin on
-syntax edable
 set grepprg=grep\ -nH\ $*
 
 set autoindent
@@ -41,18 +40,6 @@ set background=dark
 set cmdheight=2
 set noerrorbells
 set visualbell
-set mouse=a
 set textwidth=90
 set showmatch
 set copyindent
-
-" Color scheme
-if has("gui_running")
-    colorscheme inkpot
-    set guioptions-=T
-    set guifont=Terminus\ 9
-else
-    colorscheme metacosm
-endif
-
-
