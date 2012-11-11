@@ -1,3 +1,8 @@
 [user]
 	name = japacible
 	email = japacible@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = true
