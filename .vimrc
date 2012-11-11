@@ -1,45 +1,47 @@
 set nocompatible
-set showcmd
+
+"Indent settings
+set autoindent
+set expandtab
+set smarttab
+set shiftwidth=4
+set softtabstop=4
+
+set showcmd "Show incomplete commands
+set showmode "Show current mode
+
+set hidden
+set ruler
+set autoread
+set number "Line numbers
+
+syntax on "Turn on syntax highlighting
+
+set noerrorbells "Ding.
+set visualbell
+
+set showmatch
+set copyindent
+
+set history=400
+set background=dark
+set cmdheight=2
+set textwidth=90
+set number "Line numbers on
+set ignorecase
+
+set incsearch "Find next match while typing search
+set hlsearch "Highlight search terms
 
 filetype on
 filetype plugin on
 set grepprg=grep\ -nH\ $*
 
-set autoindent
-set expandtab
-set smarttab
+compiler gcc
 
-set shiftwidth=4
-set softtabstop=4
-
-" English spellchecking; not on by default
+"English spellchecking
+"Not on by default
 if version >= 700
     set spl=en spell
     set nospell
 endif
-
-" gcc all the days
-compiler gcc
-
-" Line numbers
-set number
-
-" Ignore case
-set ignorecase
-
-" Highlight search terms
-set hlsearch
-
-set hidden
-set ruler
-set autoread
-set lazyredraw
-set number
-set history=200
-set background=dark
-set cmdheight=2
-set noerrorbells
-set visualbell
-set textwidth=90
-set showmatch
-set copyindent
