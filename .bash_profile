@@ -9,7 +9,6 @@ alias ..='cd ..'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
 alias .....='cd ../../../../'
-alias harmony ='cd /projects/instr/12au/cse440/harmony/'
 
 # Vim Everything
 alias vi=vim
