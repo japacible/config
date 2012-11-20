@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/homes/iws/apacible/cse311'
+let g:netrw_dirhist_2='/homes/iws/apacible/.config'
+let g:netrw_dirhist_3='/homes/iws/apacible/uwcse-files/CSE440/individual'
+let g:netrw_dirhist_4='/projects/instr/12au/cse440/harmony/.git'
+let g:netrw_dirhist_5='/homes/iws/apacible/.ssh'
+let g:netrw_dirhist_6='/homes/iws/apacible/.icedtea'
