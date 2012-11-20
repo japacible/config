@@ -1,8 +1,11 @@
 [user]
 	name = japacible
 	email = japacible@gmail.com
+[credential]
+	helper = cache --timeout=3600
+
 [color]
-	diff = auto
-	status = auto
-	branch = auto
-	interactive = true
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = true
