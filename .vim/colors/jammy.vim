@@ -1,9 +1,7 @@
-" Vim color file
-" Maintainer:	Hans Fugal <hans@fugal.net>
-" Last Change:	$Date: 2003/07/24 00:57:11 $
-" Last Change:	$Date: 2003/07/24 00:57:11 $
-" URL:		http://hans.fugal.net/vim/colors/desert.vim
-" Version:	$Id: desert.vim,v 1.7 2003/07/24 00:57:11 fugalh Exp $
+" Vim color file inherit from the desrt.vim 
+" Maintainer:	Jammy Lee<mistapostle@gmail.com>
+" Last Change:	$Date: 2008/03/20 19:30:30 $
+" Version:	$Id: jammy.vim,v 1.1 2008/03/20 $
 
 " cool help screens
 " :he group-name
@@ -19,12 +17,12 @@ if version > 580
 	syntax reset
     endif
 endif
-let g:colors_name="desert"
+let g:colors_name="jammy"
 
-hi Normal	guifg=White guibg=grey20
+hi Normal	guifg=White guibg=Black
 
 " highlight groups
-hi Cursor	guibg=indianred guifg=khaki
+hi Cursor	guibg=khaki guifg=slategrey
 "hi CursorIM
 "hi Directory
 "hi DiffAdd
@@ -32,6 +30,7 @@ hi Cursor	guibg=indianred guifg=khaki
 "hi DiffDelete
 "hi DiffText
 "hi ErrorMsg
+hi String	guifg=Skyblue
 hi VertSplit	guibg=#c2bfa5 guifg=grey50 gui=none
 hi Folded	guibg=grey30 guifg=gold
 hi FoldColumn	guibg=grey30 guifg=tan
@@ -39,28 +38,31 @@ hi IncSearch	guifg=slategrey guibg=khaki
 "hi LineNr
 hi ModeMsg	guifg=goldenrod
 hi MoreMsg	guifg=SeaGreen
-hi NonText	guifg=LightBlue guibg=grey30
+hi NonText	guifg=LightBlue guibg=black
 hi Question	guifg=springgreen
-hi Search	guibg=grey30 guifg=#dfffdf
+hi Search	guibg=peru guifg=wheat
 hi SpecialKey	guifg=yellowgreen
 hi StatusLine	guibg=#c2bfa5 guifg=black gui=none
 hi StatusLineNC	guibg=#c2bfa5 guifg=grey50 gui=none
 hi Title	guifg=indianred
-hi Visual	gui=none guifg=khaki guibg=olivedrab
+hi Visual	gui=none   guibg=grey30
 "hi VisualNOS
 hi WarningMsg	guifg=salmon
 "hi WildMenu
 "hi Menu
 "hi Scrollbar
 "hi Tooltip
-hi MatchParen guibg=grey30 guifg=#dfffdf
 
 " syntax highlighting groups
-hi Comment	guifg=SkyBlue
-hi Constant	guifg=#ffa0a0
-hi Identifier	guifg=palegreen
-hi Statement	guifg=khaki
-hi PreProc	guifg=indianred
+hi Comment	guifg=grey60
+hi Constant	guifg=indianred
+
+hi Identifier	guifg=palegreen 
+"hi Identifier	guifg=#D18B2C
+"palegreen
+"hi Statement	guifg=khaki
+hi Statement    guifg=#E6DB74
+hi PreProc	guifg=Skyblue
 hi Type		guifg=darkkhaki
 hi Special	guifg=navajowhite
 "hi Underlined
@@ -99,7 +101,6 @@ hi Special	ctermfg=5
 hi Identifier	ctermfg=6
 hi Statement	ctermfg=3
 hi PreProc	ctermfg=5
-hi Todo		ctermfg=red ctermbg=NONE
 hi Type		ctermfg=2
 hi Underlined	cterm=underline ctermfg=5
 hi Ignore	cterm=bold ctermfg=7
