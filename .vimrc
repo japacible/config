@@ -39,10 +39,3 @@ set grepprg=grep\ -nH\ $*
 
 compiler gcc
 
-"English spellchecking
-"Not on by default
-if version >= 700
-    set spl=en spell
-    set nospell
-endif
-
