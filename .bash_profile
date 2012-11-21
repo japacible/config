@@ -36,3 +36,6 @@ alias agr='sudo apt-get remove'
 alias agu='sudo apt-get update'
 alias acs='apt-cache search'
 
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
