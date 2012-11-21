@@ -80,11 +80,3 @@ function extract()
      fi
 }
 
-# Get IP adresses
-function my_ip()
-{
-    MY_IP=$(/sbin/ifconfig ppp0 | awk '/inet/ { print $2 } ' | \
-sed -e s/addr://)
-    MY_ISP=$(/sbin/ifconfig ppp0 | awk '/P-t-P/ { print $3 } ' | \
-sed -e s/P-t-P://)
-}
