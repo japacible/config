@@ -79,5 +79,3 @@ function extract()
          echo "'$1' is not a valid file"
      fi
 }
-
-
