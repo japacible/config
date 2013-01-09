@@ -5,11 +5,11 @@ fi
 
 export CLASSPATH=.:sqljdbc4.jar
 
-# history length
+# History Length
 HISTSIZE=1500
 HISTFILESIZE=2000
 
-# history duplicates
+# History Duplicates
 HISTCONTROL=ignoredups:ignorespace
 
 # Color Everything
@@ -19,32 +19,35 @@ alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 
 # Navigation
-alias ..='cd ..'
+alias ..='cd ../..'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
 alias .....='cd ../../../../'
 
-# Vim Everything
+# Text Editors
 alias vi=vim
 alias edit='vim'
+alias sublime='~/Sublime\ Text\ 2/sublime_text'
 
 # Browser
-alias chrome='/opt/google/chrome/chrome'
+alias chrome='~/opt/google/chrome/chrome'
 alias browser=chrome
 
 # SSH
-alias attu="ssh attu.cs.washington.edu"
-alias attu1="ssh attu1.cs.washington.edu"
-alias attu2="ssh attu2.cs.washington.edu"
-alias attu3="ssh attu3.cs.washington.edu"
-alias attu4="ssh attu4.cs.washington.edu"
-alias dante="ssh dante.u.washington.edu"
-alias dante11="ssh dante11.u.washington.edu"
+alias attu='ssh attu.cs.washington.edu'
+alias attu1='ssh attu1.cs.washington.edu'
+alias attu2='ssh attu2.cs.washington.edu'
+alias attu3='ssh attu3.cs.washington.edu'
+alias attu4='ssh attu4.cs.washington.edu'
+alias dante='ssh dante.u.washington.edu'
+alias dante11='ssh dante11.u.washington.edu'
+alias snowball='ssh snowball.cs.washington.edu'
+alias floo='ssh floo.cs.washington.edu'
 
 # Fun
 alias monkey="echo oo-oo-oo aa-aa-aa"
 
-# Packages stuff
+# Packages Stuff
 alias agi='sudo apt-get install'
 alias agr='sudo apt-get remove'
 alias agu='sudo apt-get update'
@@ -53,11 +56,7 @@ alias acs='apt-cache search'
 # Echo
 alias path='echo -e ${PATH//:/\\n}'
 
-# Output?
-alias du='du -kh'
-alias df='df -kTh'
-
-# Handy Extract Program
+# Extraction Program
 function extract()
 {
      if [ -f $1 ] ; then

@@ -35,7 +35,6 @@ set history=400
 set background=dark
 set cmdheight=2
 set textwidth=90
-set number "Line numbers on
 set ignorecase
 
 set smartcase "Smart about casing
@@ -44,7 +43,12 @@ set hlsearch "Highlight search terms
 
 set mouse=a "Three blind mice
 
-colorscheme candy
+colorscheme fluffy
+"Favourites:
+  "Translucent Backgrounds
+    "candy 
+  "Solid Backgrounds
+    "bluez // calmar256-dark // fluffy // impact
 
 filetype on
 filetype plugin on
