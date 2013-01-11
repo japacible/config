@@ -33,6 +33,9 @@ alias sublime='~/Sublime\ Text\ 2/sublime_text'
 alias chrome='~/opt/google/chrome/chrome'
 alias browser=chrome
 
+# Speed Test
+alias speedtest='python2.7 ~/speedtest-cli/speedtest-cli'
+
 # SSH
 alias attu='ssh attu.cs.washington.edu'
 alias attu1='ssh attu1.cs.washington.edu'
