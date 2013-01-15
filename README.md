@@ -22,6 +22,11 @@ gnome-tweak-tool
 vim-gnome
 openssh
 lm-sensors hddtemp psensor (hardware temperature monitor)
+ack
+ctags
+ruby
+rake
+curl
 
 Download Packages:
 ==================
