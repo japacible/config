@@ -38,8 +38,6 @@ oh-my-zsh
  https://github.com/robbyrussell/oh-my-zsh
 autojump
  https://github.com/joelthelion/autojump
-janus
- https://github.com/carlhuda/janus
 speedtest-cli
 Sublime Text 2
 
