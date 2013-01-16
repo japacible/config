@@ -1,0 +1,13 @@
+Suspend to RAM (sleep):
+  pmi action suspend
+
+Suspend to disk (hibernate):
+  pmi action hibernate
+
+Lock Gnome Session:
+  gnome-screensaver-command --lock
+
+Suspend after 40 minutes:
+  echo 'pmi action suspend' | at now + 40 minutes
+
+
