@@ -36,6 +36,9 @@ alias browser=chrome
 # Speed Test
 alias speedtest='python2.7 ~/speedtest-cli/speedtest-cli'
 
+# IP
+alias ip='wget -qO- icanhazip.com'
+
 # SSH
 alias attu='ssh attu.cs.washington.edu'
 alias attu1='ssh attu1.cs.washington.edu'
