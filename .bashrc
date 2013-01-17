@@ -12,6 +12,11 @@ HISTFILESIZE=2000
 # History Duplicates
 HISTCONTROL=ignoredups:ignorespace
 
+# Machine, Do This.
+alias sonic='sudo pm-hibernate' #hedgehogs hibernate!
+alias suspend='sudo pm-suspend'
+alias imapc='sudo reboot' # :)
+
 # Color Everything
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -39,12 +44,9 @@ alias speedtest='python2.7 ~/speedtest-cli/speedtest-cli'
 # IP
 alias ip='wget -qO- icanhazip.com'
 
-# SSH
+# SSH all the machines!
 alias attu='ssh attu.cs.washington.edu'
-alias attu1='ssh attu1.cs.washington.edu'
-alias attu2='ssh attu2.cs.washington.edu'
 alias attu3='ssh attu3.cs.washington.edu'
-alias attu4='ssh attu4.cs.washington.edu'
 alias attu32='ssh attu32.cs.washington.edu'
 alias dante='ssh dante.u.washington.edu'
 alias dante11='ssh dante11.u.washington.edu'
