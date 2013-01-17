@@ -39,7 +39,7 @@ alias chrome='~/opt/google/chrome/chrome'
 alias browser=chrome
 
 # Speed Test
-alias speedtest='python2.7 ~/speedtest-cli/speedtest-cli'
+alias speedtest='python2.7 ~/scripts/speedtest-cli/speedtest-cli'
 
 # IP
 alias ip='wget -qO- icanhazip.com'
@@ -52,6 +52,11 @@ alias dante='ssh dante.u.washington.edu'
 alias dante11='ssh dante11.u.washington.edu'
 alias snowball='ssh snowball.cs.washington.edu'
 alias floo='ssh floo.cs.washington.edu'
+alias detroit='ssh detroit.cs.washington.edu'
+alias nashville='ssh nashville.cs.washington.edu'
+alias montague='ssh montague.cs.washington.edu'
+alias chumba='ssh chumba.cs.washington.edu'
+alias acho='ssh acho.cs.washington.edu'
 
 # Fun
 alias monkey="echo oo-oo-oo aa-aa-aa"
