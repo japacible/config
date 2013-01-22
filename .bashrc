@@ -13,7 +13,7 @@ HISTFILESIZE=2000
 HISTCONTROL=ignoredups:ignorespace
 
 # Machine, Do This.
-alias sonic='sudo pm-hibernate' #hedgehogs hibernate!
+alias sonic='sudo pm-hibernate' #hedgehogs unite
 alias suspend='sudo pm-suspend'
 alias imapc='sudo reboot' # :)
 
@@ -38,28 +38,26 @@ alias sublime='~/Sublime\ Text\ 2/sublime_text'
 alias chrome='~/opt/google/chrome/chrome'
 alias browser=chrome
 
-# Speed Test
+# That thing of tubes
 alias speedtest='python2.7 ~/scripts/speedtest-cli/speedtest-cli'
-
-# IP
 alias ip='wget -qO- icanhazip.com'
 
 # SSH all the machines!
 alias attu='ssh attu.cs.washington.edu'
 alias attu3='ssh attu3.cs.washington.edu'
-alias attu32='ssh attu32.cs.washington.edu'
+alias attu32='ssh attu32.cs.washington.edu' # 32bit
 alias dante='ssh dante.u.washington.edu'
 alias dante11='ssh dante11.u.washington.edu'
-alias snowball='ssh snowball.cs.washington.edu'
-alias floo='ssh floo.cs.washington.edu'
-alias detroit='ssh detroit.cs.washington.edu'
-alias nashville='ssh nashville.cs.washington.edu'
-alias montague='ssh montague.cs.washington.edu'
-alias chumba='ssh chumba.cs.washington.edu'
-alias acho='ssh acho.cs.washington.edu'
+alias snowball='ssh snowball.cs.washington.edu' #002
+alias detroit='ssh detroit.cs.washington.edu' #002
+alias nashville='ssh nashville.cs.washington.edu' #002
+alias montague='ssh montague.cs.washington.edu' #002
+alias chumba='ssh chumba.cs.washington.edu' #002
+alias acho='ssh acho.cs.washington.edu' #002
 
 # Fun
-alias monkey="echo oo-oo-oo aa-aa-aa"
+alias meow='echo meow'
+alias woof='echo woof'
 
 # Packages Stuff
 alias agi='sudo apt-get install'
@@ -69,6 +67,12 @@ alias acs='apt-cache search'
 
 # Echo
 alias path='echo -e ${PATH//:/\\n}'
+
+# The directory most traveled
+alias 344='cd ~/Workspace/uwcse-files/CSE344'
+alias 490='cd ~/Workspace/uwcse-files/CSE490D'
+alias 427='cd ~/Workspace/uwcse-files/CSE427'
+alias inferno='cd ~/Workspace/dantes-inferno'
 
 # Extraction Program
 function extract()
