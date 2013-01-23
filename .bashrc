@@ -16,6 +16,7 @@ HISTCONTROL=ignoredups:ignorespace
 alias sonic='sudo pm-hibernate' #hedgehogs unite
 alias suspend='sudo pm-suspend'
 alias imapc='sudo reboot' # :)
+alias sting='sudo shutdown -h now'
 
 # Color Everything
 alias egrep='egrep --color=auto'
