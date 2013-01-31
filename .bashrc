@@ -74,6 +74,10 @@ alias 344='cd ~/Workspace/uwcse-files/CSE344'
 alias 490='cd ~/Workspace/uwcse-files/CSE490D'
 alias 427='cd ~/Workspace/uwcse-files/CSE427'
 alias inferno='cd ~/Workspace/dantes-inferno'
+alias corgi='cd ~/Workspace/corgigram'
+
+# Easy access to files
+alias host='vim ~/etc/hosts'
 
 # Extraction Program
 function extract()
@@ -97,3 +101,6 @@ function extract()
          echo "'$1' is not a valid file"
      fi
 }
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
