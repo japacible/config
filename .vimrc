@@ -25,9 +25,6 @@ set title "Show title in console title bar
 set ttyfast "Smoother changes
 syntax on "Turn on syntax highlighting
 
-set noerrorbells "Ding.
-set visualbell
-
 set showmatch "Highlights matching braces
 set copyindent
 
@@ -56,3 +53,7 @@ set grepprg=grep\ -nH\ $*
 
 compiler gcc
 
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+    autocmd GUIEnter * set visualbell t_vb=
+endif
