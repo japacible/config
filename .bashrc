@@ -73,8 +73,8 @@ alias path='echo -e ${PATH//:/\\n}'
 alias 344='cd ~/Workspace/uwcse-files/CSE344'
 alias 490='cd ~/Workspace/uwcse-files/CSE490D'
 alias 427='cd ~/Workspace/uwcse-files/CSE427'
-alias inferno='cd ~/Workspace/dantes-inferno'
-alias corgi='cd ~/Workspace/corgigram'
+alias dante='cd ~/Workspace/dantes-inferno'
+alias hw3='cd ~/Workspace/uwcse-files/CSE427/Homework-3'
 
 # Easy access to files
 alias host='vim ~/etc/hosts'
