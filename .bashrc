@@ -65,6 +65,7 @@ alias agi='sudo apt-get install'
 alias agr='sudo apt-get remove'
 alias agu='sudo apt-get update'
 alias acs='apt-cache search'
+alias yum='sudo yum'
 
 # Echo
 alias path='echo -e ${PATH//:/\\n}'
