@@ -9,3 +9,5 @@
         status = auto
         branch = auto
         interactive = true
+[core]
+	excludesfile = /homes/iws/apacible/.gitignore_global
