@@ -59,6 +59,7 @@ alias acho='ssh acho.cs.washington.edu' #002
 # Fun
 alias meow='echo meow'
 alias woof='echo woof'
+alias beep='echo -e "\a"' #Beeps
 
 # Packages Stuff
 alias agi='sudo apt-get install'
