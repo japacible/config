@@ -25,10 +25,10 @@ alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 
 # Navigation
-alias ..='cd ../..'
-alias ...='cd ../../../'
-alias ....='cd ../../../../'
-alias .....='cd ../../../../'
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../'
 
 # Text Editors
 alias vi=vim
@@ -65,6 +65,7 @@ alias agi='sudo apt-get install'
 alias agr='sudo apt-get remove'
 alias agu='sudo apt-get update'
 alias acs='apt-cache search'
+alias yum='sudo yum'
 
 # Echo
 alias path='echo -e ${PATH//:/\\n}'
@@ -77,6 +78,9 @@ alias dante='cd ~/Workspace/dantes-inferno'
 
 # Easy access to files
 alias host='vim ~/etc/hosts'
+
+# Logs
+alias errorlogs='tail -f /var/log/apache2/error.log'
 
 # Extraction Program
 function extract()
@@ -103,3 +107,4 @@ function extract()
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
