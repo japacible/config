@@ -73,9 +73,9 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # The directory most traveled
 alias 344='cd ~/Workspace/uwcse-files/CSE344'
-alias 490='cd ~/Workspace/uwcse-files/CSE490D'
 alias 427='cd ~/Workspace/uwcse-files/CSE427'
 alias dante='cd ~/Workspace/dantes-inferno'
+alias 490='cd ~/Workspace/cse490'
 
 # Easy access to files
 alias host='vim ~/etc/hosts'
@@ -108,4 +108,3 @@ function extract()
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
