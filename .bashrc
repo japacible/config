@@ -3,6 +3,15 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# Hello, Apacible! :D
+echo 'Howdy!'
+echo ""`date "+%I:%M %p, %A %B %d, %Y"`.
+echo ''
+
+PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+PATH="usr/local/heroku/bin:$PATH"
+
+export PATH
 export CLASSPATH=.:sqljdbc4.jar
 
 # History Length
@@ -12,7 +21,7 @@ HISTFILESIZE=2000
 # History Duplicates
 HISTCONTROL=ignoredups:ignorespace
 
-# Machine, Do This.
+# Machine, X.
 alias sonic='sudo pm-hibernate' #hedgehogs unite
 alias suspend='sudo pm-suspend'
 alias imapc='sudo reboot' # :)
@@ -40,26 +49,34 @@ alias chrome='~/opt/google/chrome/chrome'
 alias browser=chrome
 
 # That thing of tubes
-alias speedtest='python2.7 ~/scripts/speedtest-cli/speedtest-cli'
+alias speed='python2.7 ~/scripts/speedtest-cli/speedtest-cli'
 alias ip='wget -qO- icanhazip.com'
 
-# SSH all the machines!
-alias attu='ssh attu.cs.washington.edu'
-alias attu3='ssh attu3.cs.washington.edu'
-alias attu32='ssh attu32.cs.washington.edu' # 32bit
-alias dante='ssh dante.u.washington.edu'
-alias dante11='ssh dante11.u.washington.edu'
-alias snowball='ssh snowball.cs.washington.edu' #002
-alias detroit='ssh detroit.cs.washington.edu' #002
-alias nashville='ssh nashville.cs.washington.edu' #002
-alias montague='ssh montague.cs.washington.edu' #002
-alias chumba='ssh chumba.cs.washington.edu' #002
-alias acho='ssh acho.cs.washington.edu' #002
+# SSH into everything!
+alias attu='ssh apacible@attu.cs.washington.edu'
+alias attu1='ssh apacible@attu1.cs.washington.edu'
+alias attu2='ssh apacible@attu2.cs.washington.edu'
+alias attu3='ssh apacible@attu3.cs.washington.edu'
+alias attu4='ssh apacible@attu4.cs.washington.edu'
+alias attu32='ssh apacible@attu32.cs.washington.edu'        #32bit
+alias dante='ssh apacible@dante.u.washington.edu'
+alias dante11='ssh apacible@dante11.u.washington.edu'
+alias snowball='ssh apacible@snowball.cs.washington.edu'    #002
+alias detroit='ssh apacible@detroit.cs.washington.edu'      #002
+alias nashville='ssh apacible@nashville.cs.washington.edu'  #002
+alias montague='ssh apacible@montague.cs.washington.edu'    #002
+alias chumba='ssh apacible@chumba.cs.washington.edu'        #002
+alias acho='ssh apacible@acho.cs.washington.edu'            #002
 
+# Apache
+alias astart='sudo apachectl start'
+alias astop='sudo apachectl stop'
+alias arestart='sudo apachectl restart'
+ 
 # Fun
 alias meow='echo meow'
 alias woof='echo woof'
-alias beep='echo -e "\a"' #Beeps
+alias beep='echo -e "\a"'
 
 # Packages Stuff
 alias agi='sudo apt-get install'
@@ -76,6 +93,9 @@ alias 344='cd ~/Workspace/uwcse-files/CSE344'
 alias 427='cd ~/Workspace/uwcse-files/CSE427'
 alias dante='cd ~/Workspace/dantes-inferno'
 alias 490='cd ~/Workspace/cse490'
+alias sandbox='cd ~/Workspace/sandbox'
+alias fish='cd ~/Workspace/swim-fishy-swim'
+alias cse='cd ~/Workspace/uwcse-files'
 
 # Easy access to files
 alias host='vim ~/etc/hosts'
@@ -105,6 +125,3 @@ function extract()
          echo "'$1' is not a valid file"
      fi
 }
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
