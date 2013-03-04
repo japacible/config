@@ -14,6 +14,10 @@ PATH="usr/local/heroku/bin:$PATH"
 export PATH
 export CLASSPATH=.:sqljdbc4.jar
 
+# Update window size after every command
+# Update values of LINES/COLUMNS if needed
+shopt -s checkwinsize
+
 # History Length
 HISTSIZE=1500
 HISTFILESIZE=2000
@@ -47,6 +51,9 @@ alias sublime='~/Sublime\ Text\ 2/sublime_text'
 # Browser
 alias chrome='~/opt/google/chrome/chrome'
 alias browser=chrome
+
+# Chess 
+alias fics='xboard -ics -icshost freechess.org' #FICS
 
 # That thing of tubes
 alias speed='python2.7 ~/scripts/speedtest-cli/speedtest-cli'

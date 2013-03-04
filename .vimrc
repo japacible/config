@@ -44,6 +44,10 @@ set hlsearch "Highlight search terms
 
 set mouse=a "Three blind mice
 
+" Colours for nested parens
+hi javaParen1 guifg=#AAFFFF
+hi javaParen2 guifg=#88BBBB
+
 let g:is_posix = 1 "Shell scripts highlighted as bash
 
 colorscheme fluffy
