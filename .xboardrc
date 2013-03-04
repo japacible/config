@@ -1,0 +1,217 @@
+;
+; xboard 4.5.3 Save Settings file
+;
+; You can edit the values of options that are already set in this file,
+; but if you add other options, the next Save Settings will not save them.
+; Use a shortcut, an @indirection file, or a .bat file instead.
+;
+-whitePieceColor #FFFFCC
+-blackPieceColor #202020
+-lightSquareColor #C8C365
+-darkSquareColor #77A26D
+-highlightSquareColor #FFFF00
+-premoveHighlightColor #FF0000
+-movesPerSession 40
+-variations false
+-internetChessServerInputBox false
+-soundProgram "aplay -q"
+-fontSizeTolerance 4
+-lowTimeWarningColor #FF0000
+-lowTimeWarning false
+-titleInWindow false
+-flashCount 0
+-flashRate 5
+-pixmapDirectory ""
+-bitmapDirectory ""
+-soundDirectory "/usr/share/games/xboard/sounds"
+-msLoginDelay 0
+-pasteSelection false
+-dropMenu false
+-timeDelay 1
+-timeControl "5"
+-timeIncrement -1
+-seekGraph false
+-autoRefresh false
+-saveGameFile ""
+-autoSaveGames false
+-monoMode false
+-showCoords false
+-showThinking false
+-ponderNextMove true
+-periodicUpdates true
+-popupExitMessage true
+-popupMoveErrors false
+-clockFont "size64:-adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1"
+-font "size64:-adobe-helvetica-medium-r-normal--14-100-100-100-p-76-iso8859-1"
+-coordFont "size64:-adobe-helvetica-bold-r-normal--12-120-75-75-p-70-iso8859-1"
+-boardSize Medium
+-alwaysOnTop false
+-autoCallFlag false
+-autoComment false
+-autoObserve false
+-autoFlipView true
+-autoRaiseBoard true
+-alwaysPromoteToQueen false
+-oldSaveStyle false
+-quietPlay false
+-getMoveList true
+-testLegality true
+-premove true
+-premoveWhite false
+-premoveWhiteText ""
+-premoveBlack false
+-premoveBlackText ""
+-icsAlarm false
+-icsAlarmTime 5000
+-animateMoving true
+-animateSpeed 10
+-animateDragging true
+-blindfold false
+-highlightLastMove true
+-highlightDragging false
+-colorizeMessages true
+-colorShout green
+-colorSShout green,black,1
+-colorChannel1 cyan
+-colorChannel cyan,black,1
+-colorKibitz magenta,black,1
+-colorTell yellow,black,1
+-colorChallenge red,black,1
+-colorRequest red
+-colorSeek blue
+-colorNormal default
+-soundShout ""
+-soundSShout ""
+-soundChannel1 ""
+-soundChannel ""
+-soundKibitz ""
+-soundTell "phone.wav"
+-soundChallenge "gong.wav"
+-soundRequest ""
+-soundSeek ""
+-soundMove "woodthunk.wav"
+-soundBell ""
+-soundIcsWin ""
+-soundIcsLoss ""
+-soundIcsDraw ""
+-soundIcsUnfinished ""
+-soundIcsAlarm "penalty.wav"
+-disguisePromotedPieces true
+-saveSettingsOnExit true
+-icsMenu {Give me;ptell Please give me $input;
+Avoid;ptell Please don't let him get $input;
+Q;$add a Queen $input;
+R;$add a Rook $input;
+B;$add a Bishop $input;
+N;$add a Knight $input;
+P;$add a Pawn $input;
+Dead;ptell I will be checkmated;
+MultiLine;
+set open 0
+set seek 0
+set tell 1;
+Kill;ptell I will checkmate him!;
+Who;who;
+Finger (name);finger $name;
+Players;players;
+Vars (name);vars $name;
+Games;games;
+Observe (name);observe $name;
+Sought;sought;
+Match (name);match $name;
+Tell (name);tell $name $input;
+Play (name);play $name;
+Message (name);message $name $input;
+}
+-icsNames ""
+-firstChessProgramNames ""
+-secondChessProgramNames ""
+-showButtonBar true
+-pgnExtendedInfo true
+-hideThinkingFromHuman false
+-liteBackTextureFile "/usr/share/games/xboard/pixmaps/textures/wood_l.xpm"
+-darkBackTextureFile "/usr/share/games/xboard/pixmaps/textures/wood_d.xpm"
+-liteBackTextureMode 1
+-darkBackTextureMode 1
+-renderPiecesWithFont ""
+-fontPieceToCharTable ""
+-fontPieceSize 80
+-overrideLineGap 1
+-adjudicateLossThreshold 0
+-delayBeforeQuit 0
+-delayAfterQuit 0
+-pgnEventHeader "Computer Chess Game"
+-defaultFrcPosition -1
+-gameListTags "eprd"
+-saveOutOfBookInfo true
+-showEvalInMoveHistory true
+-evalHistColorWhite #FFFFB0
+-evalHistColorBlack #AD5D3D
+-highlightMoveWithArrow true
+-stickyWindows true
+-adjudicateDrawMoves 0
+-autoDisplayComment true
+-autoDisplayTags true
+-adapterCommand 'polyglot -noini -ec "%fcp" -ed "%fd" -uci NalimovCache=%defaultCacheSizeEGTB'
+-polyglotDir ""
+-usePolyglotBook false
+-polyglotBook ""
+-bookDepth 12
+-bookVariation 50
+-defaultHashSize 64
+-defaultCacheSizeEGTB 4
+-defaultPathEGTB "/egtb"
+-language ""
+-oneClickMove false
+-defaultMatchGames 10
+-matchPause 10000
+-testClaims true
+-checkMates true
+-materialDraws true
+-trivialDraws false
+-ruleMoves 51
+-repeatsToDraw 6
+-backgroundObserve false
+-dualBoard false
+-smpCores 1
+-egtFormats ""
+-niceEngines 0
+-autoLogo false
+-showTargetSquares false
+-timeOddsMode 0
+-keepLineBreaksICS false
+-winWidth 529
+-winHeight 627
+-x 680
+-y 31
+-icsX 2147482968
+-icsY 2147483617
+-icsW -2147483648
+-icsH -2147483648
+-commentX 2147482968
+-commentY 2147483617
+-commentW -2147483648
+-commentH -2147483648
+-tagsX 2147482968
+-tagsY 2147483617
+-tagsW -2147483648
+-tagsH -2147483648
+-gameListX 2147482968
+-gameListY 2147483617
+-gameListW -2147483648
+-gameListH -2147483648
+-moveHistoryUp false
+-moveHistoryX 2147482968
+-moveHistoryY 2147483617
+-moveHistoryW -2147483648
+-moveHistoryH -2147483648
+-evalGraphUp false
+-evalGraphX 2147482968
+-evalGraphY 2147483617
+-evalGraphW -2147483648
+-evalGraphH -2147483648
+-engineOutputUp false
+-engineOutputX 2147482968
+-engineOutputY 2147483617
+-engineOutputW -2147483648
+-engineOutputH -2147483648
