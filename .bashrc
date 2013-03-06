@@ -103,12 +103,16 @@ alias 490='cd ~/Workspace/cse490'
 alias sandbox='cd ~/Workspace/sandbox'
 alias fish='cd ~/Workspace/swim-fishy-swim'
 alias cse='cd ~/Workspace/uwcse-files'
+alias identity='cd ~/Workspace/identity'
 
 # Easy access to files
 alias host='vim ~/etc/hosts'
 
 # Logs
 alias errorlogs='tail -f /var/log/apache2/error.log'
+
+# Autojump
+[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
 # Extraction Program
 function extract()
