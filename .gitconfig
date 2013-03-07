@@ -10,4 +10,4 @@
         branch = auto
         interactive = true
 [core]
-	excludesfile = /homes/iws/apacible/.gitignore_global
+	excludesfile = ~/.gitignore_global
