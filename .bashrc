@@ -76,7 +76,7 @@ alias chumba='ssh apacible@chumba.cs.washington.edu'        #002
 alias acho='ssh apacible@acho.cs.washington.edu'            #002
 
 # AWS
-ssh -o "ServerAliveInterval 10" -i apachoo-winter.pem hadoop@ec2-50-19-162-104.compute-1.amazonaws.com
+alias hadoop = 'ssh -o "ServerAliveInterval 10" -i apachoo-winter.pem hadoop@ec2-50-19-162-104.compute-1.amazonaws.com'
 
 # Apache
 alias astart='sudo apachectl start'
