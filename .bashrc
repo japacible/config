@@ -9,7 +9,7 @@ echo ""`date "+%I:%M %p, %A %B %d, %Y"`.
 echo ''
 
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-PATH="usr/local/heroku/bin:$PATH"
+PATH="/usr/local/heroku/bin:$PATH"
 
 export PATH
 export CLASSPATH=.:sqljdbc4.jar
@@ -113,6 +113,9 @@ alias host='vim ~/etc/hosts'
 
 # Logs
 alias errorlogs='tail -f /var/log/apache2/error.log'
+
+# Python
+alias pypy='~/pypy-2.0-beta1/bin/pypy'
 
 # Autojump
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh

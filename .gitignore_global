@@ -6,7 +6,6 @@
 *.exe
 *.o
 *.so
-*.un~
 
 # Packages #
 ############
@@ -44,6 +43,7 @@ ehthumbs.db
 Thumbs.db
 *.un~
 *.swp
+*~
 
 # Eclipse #
 ###########
