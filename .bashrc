@@ -75,6 +75,10 @@ alias montague='ssh apacible@montague.cs.washington.edu'    #002
 alias chumba='ssh apacible@chumba.cs.washington.edu'        #002
 alias acho='ssh apacible@acho.cs.washington.edu'            #002
 
+# AWS
+
+
+
 # Apache
 alias astart='sudo apachectl start'
 alias astop='sudo apachectl stop'
