@@ -99,14 +99,10 @@ alias yum='sudo yum'
 alias path='echo -e ${PATH//:/\\n}'
 
 # The directory most traveled
-alias 344='cd ~/Workspace/uwcse-files/CSE344'
-alias 427='cd ~/Workspace/uwcse-files/CSE427'
 alias dante='cd ~/Workspace/dantes-inferno'
-alias 490='cd ~/Workspace/cse490'
 alias sandbox='cd ~/Workspace/sandbox'
-alias fish='cd ~/Workspace/swim-fishy-swim'
 alias cse='cd ~/Workspace/uwcse-files'
-alias identity='cd ~/Workspace/identity'
+alias 333='cd ~/Workspace/uwcse-files/CSE333'
 
 # Easy access to files
 alias host='vim ~/etc/hosts'
