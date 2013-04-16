@@ -74,6 +74,7 @@ alias nashville='ssh apacible@nashville.cs.washington.edu'  #002
 alias montague='ssh apacible@montague.cs.washington.edu'    #002
 alias chumba='ssh apacible@chumba.cs.washington.edu'        #002
 alias acho='ssh apacible@acho.cs.washington.edu'            #002
+alias whidbey='ssh apacible@whidbey.cs.washington.edu'      #006
 
 # AWS
 alias hadoop='ssh -o "ServerAliveInterval 10" -i apachoo-winter.pem hadoop@ec2-50-19-162-104.compute-1.amazonaws.com'
@@ -103,6 +104,18 @@ alias dante='cd ~/Workspace/dantes-inferno'
 alias sandbox='cd ~/Workspace/sandbox'
 alias cse='cd ~/Workspace/uwcse-files'
 alias 333='cd ~/Workspace/uwcse-files/CSE333'
+alias 490='cd ~/Workspace/uwcse-files/CSE490T'
+alias oma='cd ~/Workspace/omachizy'
+alias omaw='cd ~/Workspace/omachizy.wiki'
+alias learnc='cd ~/Workspace/sea-academy'
+alias res='cd ~/Workspace/resources'
+alias resw='cd ~/Workspace/resources.wiki'
+
+# Sp 2013 
+alias comexa='gcc -Wall -std=gnu99 -o GetPrime.o -c GetPrime.c'
+alias comexb='gcc -Wall -std=gnu99 -o ex4.o -c ex4.c'
+alias comexc='gcc -Wall -std=gnu99 -o ex4 ex4.o GetPrime.o'
+alias comexbackup='gcc -Wall -std=gnu99 -o backup backup.c'
 
 # Easy access to files
 alias host='vim ~/etc/hosts'
