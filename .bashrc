@@ -112,6 +112,7 @@ alias res='cd ~/Workspace/resources'
 alias resw='cd ~/Workspace/resources.wiki'
 
 # Sp 2013 
+alias comex='gcc -Wall -std=gnu99 -o ex5 ex5.c'
 alias comexa='gcc -Wall -std=gnu99 -o GetPrime.o -c GetPrime.c'
 alias comexb='gcc -Wall -std=gnu99 -o ex4.o -c ex4.c'
 alias comexc='gcc -Wall -std=gnu99 -o ex4 ex4.o GetPrime.o'
