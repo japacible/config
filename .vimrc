@@ -25,7 +25,6 @@ set number "Line numbers
 set ai "Autoindenting
 set si "Smart indenting
 set wrap "Work wrapping
-set title "Show title in console title bar
 set ttyfast "Smoother changes
 syntax on "Turn on syntax highlighting
 
