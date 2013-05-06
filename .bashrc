@@ -4,7 +4,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # Hello, Apacible! :D
-echo 'Howdy!'
+echo 'Greetings, human overlord.'
 echo ""`date "+%I:%M %p, %A %B %d, %Y"`.
 echo ''
 
@@ -76,14 +76,6 @@ alias chumba='ssh apacible@chumba.cs.washington.edu'        #002
 alias acho='ssh apacible@acho.cs.washington.edu'            #002
 alias whidbey='ssh apacible@whidbey.cs.washington.edu'      #006
 
-# AWS
-alias hadoop='ssh -o "ServerAliveInterval 10" -i apachoo-winter.pem hadoop@ec2-50-19-162-104.compute-1.amazonaws.com'
-
-# Apache
-alias astart='sudo apachectl start'
-alias astop='sudo apachectl stop'
-alias arestart='sudo apachectl restart'
- 
 # Fun
 alias meow='echo meow'
 alias woof='echo woof'
@@ -111,8 +103,7 @@ alias resw='cd ~/Workspace/resources.wiki'
 alias hw2='cd ~/Workspace/uwcse-files/CSE333/hw2/hw2'
 
 # Sp 2013 
-alias comex='gcc -Wall -std=gnu99 -o ex7 ex7.c'
-alias comexbackup='gcc -Wall -std=gnu99 -o backup backup.c'
+alias comex='g++ -Wall -std=gnu++0x -o ex10 *.cc'
 
 # Easy access to files
 alias host='vim ~/etc/hosts'
