@@ -104,7 +104,7 @@ alias hw3='cd ~/Workspace/uwcse-files/CSE333/hw3/hw3'
 
 # Sp 2013 
 alias comex='g++ -Wall -std=gnu++0x -o ex10 *.cc'
-alias ex='g++ -Wall -std=gnu++0x -o ex12 ex12.cc'
+alias val='valgrind --leak-check=full ./test_suite'
 
 # Easy access to files
 alias host='vim ~/etc/hosts'
