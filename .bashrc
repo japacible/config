@@ -118,7 +118,7 @@ alias pypy='~/pypy-2.0-beta1/bin/pypy'
 # Autojump
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
-# Extraction Program
+# Extraction
 function extract()
 {
      if [ -f $1 ] ; then
@@ -139,4 +139,8 @@ function extract()
      else
          echo "'$1' is not a valid file"
      fi
+}
+
+function setcount() {
+  sort $1 | uniq -c | sort -n -r
 }
