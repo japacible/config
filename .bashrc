@@ -97,10 +97,9 @@ alias sandbox='cd ~/Workspace/sandbox'
 alias cse='cd ~/Workspace/uwcse-files'
 alias 333='cd ~/Workspace/uwcse-files/CSE333'
 alias 490='cd ~/Workspace/uwcse-files/CSE490T'
-alias learnc='cd ~/Workspace/sea-academy'
 alias res='cd ~/Workspace/resources'
 alias resw='cd ~/Workspace/resources.wiki'
-alias hw3='cd ~/Workspace/uwcse-files/CSE333/hw3/hw3'
+alias hw4='cd ~/Workspace/uwcse-files/CSE333/hw4/hw4'
 
 # Sp 2013 
 alias comex='g++ -Wall -std=gnu++0x -o ex10 *.cc'
