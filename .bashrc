@@ -36,6 +36,10 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
+alias 'la'='ls -a --color=auto'
+alias 'll'='ls -alF --color=auto'
+alias 'l'='ls -cF --color=auto'
+alias 'lt'='ls -lt --color=auto'
 
 # Navigation
 alias ..='cd ..'
@@ -55,11 +59,14 @@ alias browser=chrome
 # Chess 
 alias fics='xboard -ics -icshost freechess.org' #FICS
 
-# That thing of tubes
+# Tell Me
 alias speed='python2.7 ~/scripts/speedtest-cli/speedtest-cli'
 alias ip='wget -qO- icanhazip.com'
+alias os='uname -srm'
+alias now='date'
+alias whoami='pwd'
 
-# SSH into everything!
+# SSH
 alias attu='ssh apacible@attu.cs.washington.edu'
 alias attu1='ssh apacible@attu1.cs.washington.edu'
 alias attu2='ssh apacible@attu2.cs.washington.edu'
