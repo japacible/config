@@ -112,6 +112,9 @@ alias hw4='cd ~/Workspace/uwcse-files/CSE333/hw4/hw4'
 alias comex='g++ -Wall -std=gnu++0x -o ex10 *.cc'
 alias val='valgrind --leak-check=full ./test_suite'
 
+# Ports
+alias 5555='nc -l 5555'
+
 # Easy access to files
 alias host='vim ~/etc/hosts'
 
