@@ -111,6 +111,7 @@ alias hw4='cd ~/Workspace/uwcse-files/CSE333/hw4/hw4'
 # Sp 2013 
 alias comex='g++ -Wall -std=gnu++0x -o ex10 *.cc'
 alias val='valgrind --leak-check=full ./test_suite'
+alias 5545='nc apache-totoro 5545'
 
 # Easy access to files
 alias host='vim ~/etc/hosts'
