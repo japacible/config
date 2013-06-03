@@ -82,7 +82,7 @@ alias montague='ssh apacible@montague.cs.washington.edu'    #002
 alias chumba='ssh apacible@chumba.cs.washington.edu'        #002
 alias acho='ssh apacible@acho.cs.washington.edu'            #002
 alias whidbey='ssh apacible@whidbey.cs.washington.edu'      #006
-
+alias quasi='ssh apacible@quasi.cs.washington.edu'          #ACM
 # Fun
 alias meow='echo meow'
 alias woof='echo woof'
@@ -112,6 +112,9 @@ alias hw4='cd ~/Workspace/uwcse-files/CSE333/hw4/hw4'
 alias comex='g++ -Wall -std=gnu++0x -o ex10 *.cc'
 alias val='valgrind --leak-check=full ./test_suite'
 alias 5545='nc apache-totoro 5545'
+
+# Ports
+alias 5555='nc -l 5555'
 
 # Easy access to files
 alias host='vim ~/etc/hosts'
