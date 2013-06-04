@@ -112,6 +112,8 @@ alias hw4='cd ~/Workspace/uwcse-files/CSE333/hw4/hw4'
 alias comex='g++ -Wall -std=gnu++0x -o ex10 *.cc'
 alias val='valgrind --leak-check=full ./test_suite'
 alias 5545='nc apache-totoro 5545'
+alias http='./http333d 5555 ../projdocs ../hw3/unit_test_indices/*'
+alias shttp='./solution_binaries/http333d 5555 ../projdocs ../hw3/unit_test_indices/*'
 
 # Ports
 alias 5555='nc -l 5555'
