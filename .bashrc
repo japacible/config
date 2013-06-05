@@ -108,9 +108,9 @@ alias res='cd ~/Workspace/resources'
 alias resw='cd ~/Workspace/resources.wiki'
 alias hw4='cd ~/Workspace/uwcse-files/CSE333/hw4/hw4'
 
-# Sp 2013 
+Sp 2013 
 alias comex='g++ -Wall -std=gnu++0x -o ex10 *.cc'
-alias val='valgrind --leak-check=full ./test_suite'
+alias val='valgrind --leak-check=full --show-reachable=yes ./test_suite'
 alias 5545='nc apache-totoro 5545'
 alias http='./http333d 5555 ../projdocs ../hw3/unit_test_indices/*'
 alias shttp='./solution_binaries/http333d 5555 ../projdocs ../hw3/unit_test_indices/*'
