@@ -53,3 +53,19 @@ Thumbs.db
 # Dex VM #
 ##########
 *.dex
+
+# Things #
+##########
+.CFUserTextEncoding
+.Trash/
+.account
+.android/
+.cups/
+.rnd
+.ssh_temp/
+Development/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
