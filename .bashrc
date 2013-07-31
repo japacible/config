@@ -3,6 +3,10 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+if [ -f /mnt/vol/engshare/admin/scripts/master.bashrc ]; then
+        . /mnt/vol/engshare/admin/scripts/master.bashrc
+fi
+
 # Hello, Apacible! :D
 echo 'Greetings, human overlord.'
 echo ""`date "+%I:%M %p, %A %B %d, %Y"`.
@@ -10,6 +14,7 @@ echo ''
 
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 PATH="/usr/local/heroku/bin:$PATH"
+PATH="/usr/local/jdk-7u4-64/bin:$PATH"
 
 export PATH
 export CLASSPATH=.:sqljdbc4.jar
@@ -19,8 +24,8 @@ export CLASSPATH=.:sqljdbc4.jar
 shopt -s checkwinsize
 
 # History Length
-HISTSIZE=1500
-HISTFILESIZE=2000
+HISTSIZE=150000
+HISTFILESIZE=200000
 
 # History Duplicates
 HISTCONTROL=ignoredups:ignorespace
@@ -103,18 +108,8 @@ alias path='echo -e ${PATH//:/\\n}'
 alias dante='cd ~/Workspace/dantes-inferno'
 alias sandbox='cd ~/Workspace/sandbox'
 alias cse='cd ~/Workspace/uwcse-files'
-alias 333='cd ~/Workspace/uwcse-files/CSE333'
-alias 490='cd ~/Workspace/uwcse-files/CSE490T'
 alias res='cd ~/Workspace/resources'
 alias resw='cd ~/Workspace/resources.wiki'
-alias hw4='cd ~/Workspace/uwcse-files/CSE333/hw4/hw4'
-
-# Sp 2013 
-alias comex='g++ -Wall -std=gnu++0x -o ex10 *.cc'
-alias val='valgrind --leak-check=full --show-reachable=yes ./test_suite'
-alias 5545='nc apache-totoro 5545'
-alias http='./http333d 5555 ../projdocs ../hw3/unit_test_indices/*'
-alias shttp='./solution_binaries/http333d 5555 ../projdocs ../hw3/unit_test_indices/*'
 
 # Ports
 alias 5555='nc -l 5555'
