@@ -1,8 +1,8 @@
 [user]
-	name = japacible
-	email = japacible@gmail.com
+    name = japacible
+    email = japacible@gmail.com
 [credential]
-	helper = cache --timeout=3600
+    helper = cache --timeout=3600
 [color]
     diff = auto
     status = auto
@@ -18,84 +18,85 @@
     frag = magenta bold
     old = red bold
     new = green bold
-	whitespace = red reverse
+    whitespace = red reverse
 [color "status"]
     added = yellow
     changed = green
     untracked = cyan
 [merge]
-	tool = opendiff
+    tool = opendiff
 [core]
-	excludesfile = ~/.gitignore_global
-	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    editor = vim
+    excludesfile = ~/.gitignore_global
+    whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [branch]
-	autosetuprebase = always
+    autosetuprebase = always
 [alias]
-	standup   = log --since yesterday --author japacible
-  	today = log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative
+    standup   = log --since yesterday --author japacible
+    today = log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative
 
-	aa= !git add -u && git add . && git status
-	br = branch 
-	co = checkout
-	st = status -s
-	cl = clone
-	ci = commit
-	co = checkout
-	br = branch 
-	dc = diff --cached
-	di = diff
-	diff = diff --word-diff
-	dlc = diff --cached HEAD^
-	ds = diff --staged
-	fetchall   = fetch -v --all
-	rgrep = !git grep
+    aa= !git add -u && git add . && git status
+    br = branch 
+    co = checkout
+    st = status -s
+    cl = clone
+    ci = commit
+    co = checkout
+    br = branch 
+    dc = diff --cached
+    di = diff
+    diff = diff --word-diff
+    dlc = diff --cached HEAD^
+    ds = diff --staged
+    fetchall   = fetch -v --all
+    rgrep = !git grep
 
-	purr = pull --rebase
-	pp = !git pull && git push
-	next = "!git add . && git rebase --continue"
-	up = !git fetch origin && git rebase origin/master
-	ir = !git rebase -i origin/master
-	done = !git fetch && git rebase origin/master && git checkout master && git merge @{-1} && rake && git push
+    purr = pull --rebase
+    pp = !git pull && git push
+    next = "!git add . && git rebase --continue"
+    up = !git fetch origin && git rebase origin/master
+    ir = !git rebase -i origin/master
+    done = !git fetch && git rebase origin/master && git checkout master && git merge @{-1} && rake && git push
 
-	panic = !tar cvf ../git_panic.tar *
+    panic = !tar cvf ../git_panic.tar *
 
-	f = "!git ls-files | grep -i"
-	grep = grep -Ii
-	gr = grep -Ii
-	la = "!git config -l | grep alias | cut -c 7-"
+    f = "!git ls-files | grep -i"
+    grep = grep -Ii
+    gr = grep -Ii
+    la = "!git config -l | grep alias | cut -c 7-"
 
-	r = reset
-	r1 = reset HEAD^
-	rh = reset --hard
+    r = reset
+    r1 = reset HEAD^
+    rh = reset --hard
 
-	sl = stash list
-	sa = stash apply
-	ss = stash save
+    sl = stash list
+    sa = stash apply
+    ss = stash save
 
-	assume = update-index --assume-unchanged
-	unassume = update-index --no-assume-unchanged
-	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
-	unassumeall = "!git assumed | xargs git update-index --no-assume-unchanged"
-	assumeall = "!git st -s | awk {'print $2'} | xargs git assume"
+    assume = update-index --assume-unchanged
+    unassume = update-index --no-assume-unchanged
+    assumed = "!git ls-files -v | grep ^h | cut -c 3-"
+    unassumeall = "!git assumed | xargs git update-index --no-assume-unchanged"
+    assumeall = "!git st -s | awk {'print $2'} | xargs git assume"
 
-	log-fancy = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
-	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-	lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
-	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
-	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
-	lg = log --f
-	le = log --oneline --decorate
-	lu = log -u
+    log-fancy = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+    lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+    ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+    lg = log --f
+    le = log --oneline --decorate
+    lu = log -u
 [url "git@github.com:"]
-	insteadOf = "gh:"
-	pushInsteadOf = "github:"
-	pushInsteadOf = "git://github.com/"
+    insteadOf = "gh:"
+    pushInsteadOf = "github:"
+    pushInsteadOf = "git://github.com/"
 [url "git://github.com/"]
-	insteadOf = "github:"
+    insteadOf = "github:"
 [url "git@gist.github.com:"]
-	insteadOf = "gst:"
-	pushInsteadOf = "gist:"
-	pushInsteadOf = "git://gist.github.com/"
+    insteadOf = "gst:"
+    pushInsteadOf = "gist:"
+    pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
-	insteadOf = "gist:"
+    insteadOf = "gist:"
