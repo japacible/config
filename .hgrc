@@ -6,6 +6,3 @@
     smartlog=
 [alias]
     sl = smartlog --template '{rev} {author|user} \x1B[32m{bookmarks}\x1B[0m\n{desc|firstline}\n\n'
-
-
-
