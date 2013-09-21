@@ -16,5 +16,10 @@ window.onload = function() {
     language: 'en'
   });
 
-  console.log("finished initializing sequence.");
+  // Set up form submission listener
+  $('#create-task-btn').on('click', function(e){
+    $('#create-task-form').submit();
+  });
+
+  console.log("Chief, finished initialization sequence.");
 };
