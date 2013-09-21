@@ -1,142 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="content-language" content="en-US" />
-  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8;" />
-  <meta name="description" content="Google Task Factory" />
-  <meta name="author" content="Jennifer Apacible" />
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-language" content="en-US" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8;" />
+    <meta name="description" content="Google Task Factory" />
+    <meta name="author" content="Jennifer Apacible" />
+    <title>task factory</title>
 
-  <title>task factory</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h3>task factory</h3>
+      <button  type="button" class="btn" id="auth_btn">Authenticate</button>
+      <button  type="button" class="btn" id="today_btn">+Task: Today</button>
+      <button  type="button" class="btn" id="week_btn">+Task: Week</button>
+      <button  type="button" class="btn" id="year_btn">+Task: Year</button>
 
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div id="header">
-    <h3>task factory</h3>
-  </div>
-  <div id="main">
-    <button onclick="auth();">Authenticate</button>
-    <button onclick="loadtoday()">+Task: Today</button>
-    <button onclick="loadweek()">+Task: Week</button>
-    <button onclick="loadyear()">+Task: Year</button>
-  </div>
-</body>
+      <form class="form-horizontal">
+          <legend>Create</legend>
+          <div class="control-group">
+            <label class="control-label" for="inputName">Name</label>
+            <div class="controls">
+              <input type="text" id="inputName" placeholder="Name">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputDescription">Description</label>
+            <div class="controls">
+              <input type="text" id="inputDescription" placeholder="Description">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="start-date">Start</label>
+            <div class="controls">
+              <div class="input-append date" id="start-date" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                <input class="span2" size="16" type="text" value="12-02-2012">
+                <span class="add-on"><i class="icon-th"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="end-date">End</label>
+            <div class="controls">
+              <div class="input-append date" id="end-date" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                <input class="span2" size="16" type="text" value="12-02-2012">
+                <span class="add-on"><i class="icon-th"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="controls">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn">Cancel</button>
+          </div>
+      </form>
+    </div>
+    <div id="content"></div>
+  </body>
+  
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/react.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="https://apis.google.com/js/client.js"></script>
 
-<script>
-  var YEAR_MAX = 365;
-  var WEEK_MAX = 7;
-  var tasklistId;
-  var offset = 0;
-  var max = 0;
-
-  function load() {
-    gapi.client.setApiKey('YOUR API KEY HERE!');
-    gapi.client.load('tasks', 'v1', getTaskLists);
-  };
-
-  function getTaskLists() {
-    gapi.client.request({
-      'path': '/tasks/v1/users/@me/lists',
-      'callback': handleListTasklists
-    });
-  }
-
-  function handleListTasklists(response) {
-    var tasklists = response && response.items;
-    if (!tasklists || !tasklists.length) { throw('no tasklists'); }
-
-    tasklistId = tasklists[0].id;
-    insertTask();
-  }
-
-  function insertTask() {
-    var dueDate = getISODateNow();
-
-    gapi.client.request({
-      'path': '/tasks/v1/lists/' + tasklistId + '/tasks',
-      'method': 'POST',
-      'body': JSON.stringify({
-          'title': 'Github Commit',
-          'due': dueDate
-        }),
-      'callback': handleCreateTask
-    });
-  };
-
-  function handleCreateTask(response) {
-    if (!response || !response.id) { throw('Failed to create task'); }
-
-    console.log('Created task.');
-    console.log('Title: ' + response.title + ', ID: ' + response.id);
-
-    if (max == YEAR_MAX) {
-      if (offset < YEAR_MAX) {
-        offset++;
-        load();
-      } else {
-        offset = 0;
-      }
-    } else if (max == WEEK_MAX) {
-      if (offset < WEEK_MAX) {
-        offset++;
-        load();
-      } else {
-        offset = 0;
-      }
-    } else {
-      offset = 0;
-    }
-  };
-
-  function auth() {
-    var config = {
-      'client_id': '551363164658',
-      'scope': 'https://www.googleapis.com/auth/tasks'
-    };
-    gapi.auth.authorize(config, function() {
-      console.log('authentication successful');
-    });
-  };
-
-  function pad(n) {
-    return n < 10 ? '0' + n : n
-  };
-
-  function ISODateString(d) {  
-     return d.getUTCFullYear()+'-'
-          + pad(d.getUTCMonth()+1)+'-'
-          + pad(d.getUTCDate())+'T'
-          + pad(d.getUTCHours())+':'
-          + pad(d.getUTCMinutes())+':'
-          + pad(d.getUTCSeconds())+'Z'
-  };
-
-  function getISODateNow() {
-    var date = new Date();
-    date.setDate(date.getDate() + offset);
-    
-    // Format: 2009-09-28T19:03:12Z
-    return ISODateString(date);
-  };
-
-  function loadtoday() {
-    load();
-  };
-
-  function loadweek() {
-    max = WEEK_MAX;
-    load();
-  };
-
-  function loadyear() {
-    max = YEAR_MAX;
-    load();
-  };
-
-  function alertme() {
-    console.log("Done loading! That took a while.");
-  };
-</script>
-<script src="https://apis.google.com/js/client.js?onload=alertme"></script>
+  <script type="text/jsx" src="js/components.js"></script>
+  <script type="text/javascript" src="js/calendar.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
 </html>
