@@ -1,4 +1,8 @@
 set nocompatible
+"set guifont=Inconsolata\ 16
+"set guifont=Droid\ Sans\ Mono\ 13
+
+set backspace=indent,eol,start
 
 "Indent settings
 set autoindent
