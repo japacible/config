@@ -110,6 +110,8 @@ alias sandbox='cd ~/Workspace/sandbox'
 alias cse='cd ~/Workspace/uwcse-files'
 alias res='cd ~/Workspace/resources'
 alias resw='cd ~/Workspace/resources.wiki'
+alias 403='cd ~/Workspace/uwcse-files/CSE403'
+alias 312='cd ~/Workspace/uwcse-files/CSE403'
 
 # Ports
 alias 5555='nc -l 5555'
