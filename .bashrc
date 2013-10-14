@@ -88,6 +88,7 @@ alias chumba='ssh apacible@chumba.cs.washington.edu'        #002
 alias acho='ssh apacible@acho.cs.washington.edu'            #002
 alias whidbey='ssh apacible@whidbey.cs.washington.edu'      #006
 alias quasi='ssh apacible@quasi.cs.washington.edu'          #ACM
+alias cubist='ssh apacible@cubist.cs.washington.edu'	    #403
 
 # Fun
 alias meow='echo meow'
