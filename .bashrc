@@ -88,6 +88,7 @@ alias chumba='ssh apacible@chumba.cs.washington.edu'        #002
 alias acho='ssh apacible@acho.cs.washington.edu'            #002
 alias whidbey='ssh apacible@whidbey.cs.washington.edu'      #006
 alias quasi='ssh apacible@quasi.cs.washington.edu'          #ACM
+alias cubist='ssh apacible@cubist.cs.washington.edu'        #403
 
 # Fun
 alias meow='echo meow'
@@ -112,6 +113,8 @@ alias res='cd ~/Workspace/resources'
 alias resw='cd ~/Workspace/resources.wiki'
 alias 403='cd ~/Workspace/uwcse-files/CSE403'
 alias 312='cd ~/Workspace/uwcse-files/CSE312'
+alias 403='cd ~/Workspace/commission-me'
+alias 403a='cd /projects/instr/cubist/13au/cse403/cse403a'
 
 # Ports
 alias 5555='nc -l 5555'
