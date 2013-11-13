@@ -115,6 +115,7 @@ alias resw='cd ~/Workspace/resources.wiki'
 alias 403='cd ~/Workspace/uwcse-files/CSE403'
 alias 312='cd ~/Workspace/uwcse-files/CSE312'
 alias comme='cd ~/Workspace/commission-me'
+alias 403a='cd /projects/instr/cubist/13au/cse403/cse403a'
 
 # Ports
 alias 5555='nc -l 5555'
