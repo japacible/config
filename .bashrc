@@ -15,6 +15,7 @@ echo ''
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 PATH="/usr/local/heroku/bin:$PATH"
 PATH="/usr/local/jdk-7u4-64/bin:$PATH"
+PATH="/usr/local/bin/rails:$PATH"
 
 export PATH
 export CLASSPATH=.:sqljdbc4.jar
@@ -112,8 +113,8 @@ alias cse='cd ~/Workspace/uwcse-files'
 alias res='cd ~/Workspace/resources'
 alias resw='cd ~/Workspace/resources.wiki'
 alias 403='cd ~/Workspace/uwcse-files/CSE403'
-alias 312='cd ~/Workspace/uwcse-files/CSE403'
-alias 403='cd ~/Workspace/commission-me'
+alias 312='cd ~/Workspace/uwcse-files/CSE312'
+alias comme='cd ~/Workspace/commission-me'
 
 # Ports
 alias 5555='nc -l 5555'
@@ -156,3 +157,5 @@ function extract()
 function setcount() {
   sort $1 | uniq -c | sort -n -r
 }
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
