@@ -1,31 +1,17 @@
 servers = (
+  { address = "irc.ubuntu.com"; chatnet = "Ubuntu"; port = "8001"; },
+  { address = "irc.adelais.net"; chatnet = "Adelais"; port = "6667"; },
   { 
-    address = "irc.ubuntu.com"; 
-    chatnet = "Ubuntu"; 
-    port = "8001"; 
-  },{ 
-    address = "irc.adelais.net"; 
-    chatnet = "Adelais"; 
-    port = "6667"; 
-  },{ 
     address = "irc.freenode.net";
-    chatnet = "Freenode"; 
-    port = "6667"; 
+    chatnet = "Freenode";
+    port = "6667";
   }
 );
 
 chatnets = {
-  Adelais = {
-    type = "IRC";
-    nick = "japacble";
-  };
-  Freenode = {
-    type = "IRC";
-    nick = "japacible";
-  };
-  Ubuntu = { 
-    type = "IRC"; 
-  };
+  Adelais = { type = "IRC"; nick = "japacble"; };
+  Freenode = { type = "IRC"; };
+  Ubuntu = { type = "IRC"; };
 };
 
 channels = (
@@ -205,7 +191,8 @@ settings = {
     bell_beeps = "yes";
     beep_when_away = "no";
     beep_when_window_active = "yes";
+    theme = "industrial.theme";
   };
 };
 
-hilights = ( {nick = "yes"; });
+hilights = ( { nick = "yes"; } );
