@@ -59,8 +59,9 @@ alias edit='vim'
 alias sublime='~/Sublime\ Text\ 2/sublime_text'
 
 # Browser
-alias chrome='~/opt/google/chrome/chrome'
+alias chrome='/opt/google/chrome/chrome'
 alias browser=chrome
+alias chromehome='/usr/bin/google-chrome --blacklist-accelerated-compositing'
 
 # Chess 
 alias fics='xboard -ics -icshost freechess.org' #FICS
