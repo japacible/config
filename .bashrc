@@ -116,6 +116,8 @@ alias leap='cd ~/Workspace/leap-kitchen'
 alias gtask='cd ~/Workspace/gtask-factory'
 alias 440='cd ~/Workspace/uwcse-files/CSE440/wi14'
 alias 461='cd ~/Workspace/uwcse-files/CSE461'
+alias hw0='cd ~/Workspace/uwcse-files/CSE461/wi14/homework/hw0' #461 hw0
+alias hw1='cd ~/Workspace/uwcse-files/CSE440/wi14/homework/hw1' #440 hw1
 
 # Ports
 alias 5555='nc -l 5555'
