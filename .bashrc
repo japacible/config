@@ -119,6 +119,9 @@ alias 461='cd ~/Workspace/uwcse-files/CSE461'
 alias hw0='cd ~/Workspace/uwcse-files/CSE461/wi14/homework/hw0' #461 hw0
 alias hw1='cd ~/Workspace/uwcse-files/CSE440/wi14/homework/hw1' #440 hw1
 
+# School stuff
+alias reg='./run cse461.cs.washington.edu 46101' # CSE 461 HW1
+
 # Ports
 alias 5555='nc -l 5555'
 
