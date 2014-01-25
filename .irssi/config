@@ -9,7 +9,7 @@ servers = (
 );
 
 chatnets = {
-  Adelais = { type = "IRC"; nick = "japacble"; };
+  Adelais = { type = "IRC"; nick = "japacible"; };
   Freenode = { type = "IRC"; };
   Ubuntu = { type = "IRC"; };
 };
