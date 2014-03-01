@@ -1,14 +1,14 @@
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+  . /etc/bashrc
 fi
 
 if [ -f /mnt/vol/engshare/admin/scripts/master.bashrc ]; then
-        . /mnt/vol/engshare/admin/scripts/master.bashrc
+  . /mnt/vol/engshare/admin/scripts/master.bashrc
 fi
 
 # Hello, Apacible! :D
-echo 'Greetings, human overlord.'
+echo 'Greetings, jenpa!'
 echo ""`date "+%I:%M %p, %A %B %d, %Y"`.
 echo ''
 
@@ -32,10 +32,10 @@ HISTFILESIZE=200000
 HISTCONTROL=ignoredups:ignorespace
 
 # Machine, X.
-alias sonic='sudo pm-hibernate' #hedgehogs unite
+alias hibernate='sudo pm-hibernate' #hedgehogs unite
 alias suspend='sudo pm-suspend'
-alias imapc='sudo reboot' # :)
-alias sting='sudo shutdown -h now'
+alias reboot='sudo reboot' # :)
+alias shutdown='sudo shutdown -h now'
 
 # Color Everything
 alias egrep='egrep --color=auto'
@@ -107,17 +107,15 @@ alias yum='sudo yum'
 # Echo
 alias path='echo -e ${PATH//:/\\n}'
 
-# The directory most traveled
+# Common directories
 alias dante='cd ~/Workspace/dantes-inferno'
 alias sandbox='cd ~/Workspace/sandbox'
 alias cse='cd ~/Workspace/uwcse-files'
 alias res='cd ~/Workspace/res'
-alias leap='cd ~/Workspace/leap-kitchen'
-alias gtask='cd ~/Workspace/gtask-factory'
+alias dropbox='cd ~/Dropbox'
 alias 440='cd ~/Workspace/uwcse-files/CSE440/wi14'
-alias 461='cd ~/Workspace/uwcse-files/CSE461'
+alias 461='cd ~/Workspace/uwcse-files/CSE461/wi14'
 alias net='cd ~/Workspace/uwcse-files/CSE461/wi14/homework/hw1' #461
-alias hci='cd ~/Workspace/uwcse-files/CSE440/wi14/homework/hw2' #440
 
 # School stuff
 alias reg='./run cse461.cs.washington.edu 46101' # CSE 461 HW1
