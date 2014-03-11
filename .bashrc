@@ -16,6 +16,7 @@ PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 PATH="/usr/local/heroku/bin:$PATH"
 PATH="/usr/local/jdk-7u4-64/bin:$PATH"
 PATH="/usr/local/bin/rails:$PATH"
+PATH="$HOME/local/bin:$PATH"
 
 export PATH
 export CLASSPATH=.:sqljdbc4.jar
@@ -32,9 +33,9 @@ HISTFILESIZE=200000
 HISTCONTROL=ignoredups:ignorespace
 
 # Machine, X.
-alias hibernate='sudo pm-hibernate' #hedgehogs unite
+alias hibernate='sudo pm-hibernate'
 alias suspend='sudo pm-suspend'
-alias reboot='sudo reboot' # :)
+alias reboot='sudo reboot'
 alias shutdown='sudo shutdown -h now'
 
 # Color Everything
@@ -115,10 +116,12 @@ alias res='cd ~/Workspace/res'
 alias dropbox='cd ~/Dropbox'
 alias 440='cd ~/Workspace/uwcse-files/CSE440/wi14'
 alias 461='cd ~/Workspace/uwcse-files/CSE461/wi14'
-alias net='cd ~/Workspace/uwcse-files/CSE461/wi14/homework/hw1' #461
 
 # School stuff
 alias reg='./run cse461.cs.washington.edu 46101' # CSE 461 HW1
+
+# Pair programming
+alias jun='tmux -S /tmp/tmux-junpucublu attach -r' # CSE 461 with sunjayc
 
 # Ports
 alias 5555='nc -l 5555'
