@@ -123,6 +123,9 @@ alias reg='./run cse461.cs.washington.edu 46101' # CSE 461 HW1
 # Pair programming
 alias jun='tmux -S /tmp/tmux-junpucublu attach -r' # CSE 461 with sunjayc
 
+# Dev server
+alias myserver='python -m SimpleHTTPServer 8000'
+
 # Ports
 alias 5555='nc -l 5555'
 
