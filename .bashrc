@@ -20,6 +20,7 @@ PATH="$HOME/local/bin:$PATH"
 
 export PATH
 export CLASSPATH=.:sqljdbc4.jar
+export TERM="xterm-256color"
 
 # Update window size after every command
 # Update values of LINES/COLUMNS if needed
