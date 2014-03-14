@@ -20,7 +20,7 @@ chatnets = {
 };
 
 channels = (
-  { name = "#stackunderflow"; chatnet = "Adelais"; autojoin = "Yes"; }
+  { name = "#stackunderflow"; chatnet = "Adelais"; autojoin = "yes"; }
 );
 
 aliases = {

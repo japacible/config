@@ -25,6 +25,7 @@ set ruler "Cuser at last line of screen/status line
 set autoread
 set nostartofline "Don't jump to first char when paging
 set number "Line numbers
+set t_ut=
 
 set ai "Autoindenting
 set si "Smart indenting
