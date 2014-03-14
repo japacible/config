@@ -20,7 +20,9 @@ PATH="$HOME/local/bin:$PATH"
 
 export PATH
 export CLASSPATH=.:sqljdbc4.jar
-export TERM="xterm-256color"
+
+# Makes irssi work on tmux without recent line rewrites
+[ -n "$TMUX" ] && export TERM="screen-256color" 
 
 # Update window size after every command
 # Update values of LINES/COLUMNS if needed
@@ -38,6 +40,7 @@ alias hibernate='sudo pm-hibernate'
 alias suspend='sudo pm-suspend'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown -h now'
+alias reload='. ~/.bashrc'
 
 # Color Everything
 alias egrep='egrep --color=auto'
