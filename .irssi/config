@@ -11,12 +11,15 @@ servers = (
     address = "irc.freenode.net";
     chatnet = "Freenode";
     port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "yes";
   }
 );
 
 chatnets = {
   Adelais = { type = "IRC"; nick = "japacible"; };
-  Freenode = { type = "IRC"; };
+  Freenode = { type = "IRC"; nick = "japacible"; };
 };
 
 channels = (
