@@ -184,18 +184,32 @@ statusbar = {
 };
 settings = {
   core = {
-    real_name = "japacible";
-    user_name = "japacible";
+    real_name = "Jennifer Apacible";
+    user_name = "apacible";
     nick = "japacible";
   };
-  "fe-text" = { actlist_sort = "refnum"; };
+  "irc/core" = {
+    alternate_nick = "jenpa";
+    part_message = "";
+  }
+  "fe-text" = { 
+    actlist_sort = "refnum";
+    indent_always = "no";
+    scrollback_lines = "2000";
+  };
   "fe-common/core" = {
     bell_beeps = "yes";
     beep_when_away = "yes";
     beep_when_window_active = "yes";
     beep_msg_level = "MSGS NOTICES INVITES DCC DCCMSGS HILIGHT";
     theme = "molokai.theme";
+    use_status_window = "yes";
+    show_nickmode = "yes";
+    hilight_nick_matches = "yes";
+    autoclose_windows = "yes";
   };
 };
 
-hilights = ( { nick = "yes"; } );
+hilights = ({
+  nick = "yes";
+});
