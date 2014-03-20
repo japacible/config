@@ -1,0 +1,36 @@
+@import url(fonts/clear-sans.css);
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #faf8ef;
+  color: #776e65;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px; }
+body {
+  margin: 10px 0; }
+a {
+  color: #776e65;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer; }
+hr {
+  border: none;
+  border-bottom: 1px solid #d8d4d0;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+iframe {
+  margin: 0;
+  border: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+div {
+  margin:0px;
+  padding:0px;
+  overflow:hidden;
+}
+#header {
+  text-align: center;
+}

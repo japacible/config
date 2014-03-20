@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Play 2048</title>
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+  <div id="header">
+    <button id="random-btn" onclick="randomize()">Random 2048</button>
+  </div>
+  <div id="frame">
+    <iframe 
+      id="site-frame" frameborder="0"
+      src="http://gabrielecirulli.github.io/2048/">
+    </iframe>
+  </div>
+  <script src="js/jquery-2.1.0.min.js"></script>
+  <script src="js/objects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
