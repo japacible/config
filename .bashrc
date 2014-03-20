@@ -119,7 +119,7 @@ alias 461='cd ~/Workspace/uwcse-files/CSE461/wi14'
 alias host='vim ~/etc/hosts'
 
 # Pair programming
-alias jun='tmux -S /tmp/tmux-junpucublu attach -r' # CSE 461 with sunjayc
+alias jun='tmux -S /tmp/tmux-junpucublu attach -r' # with sunjayc
 
 # Dev 
 alias gdb='gdb -tui'
