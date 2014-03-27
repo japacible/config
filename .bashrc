@@ -57,6 +57,7 @@ alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../'
+alias ~='cd ~'
 
 # Text Editors
 alias vi=vim
