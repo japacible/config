@@ -114,8 +114,6 @@ alias sandbox='cd ~/Workspace/sandbox'
 alias cse='cd ~/Workspace/uwcse-files'
 alias res='cd ~/Workspace/res'
 alias dropbox='cd ~/Dropbox'
-alias 440='cd ~/Workspace/uwcse-files/CSE440/wi14'
-alias 461='cd ~/Workspace/uwcse-files/CSE461/wi14'
 alias host='vim ~/etc/hosts'
 
 # Pair programming
