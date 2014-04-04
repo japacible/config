@@ -57,6 +57,7 @@ alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../'
+alias ~='cd ~'
 
 # Text Editors
 alias vi=vim
@@ -98,11 +99,6 @@ alias whidbey='ssh apacible@whidbey.cs.washington.edu'      #006
 alias quasi='ssh apacible@quasi.cs.washington.edu'          #ACM
 alias cubist='ssh apacible@cubist.cs.washington.edu'        #403
 
-# Fun
-alias meow='echo meow'
-alias woof='echo woof'
-alias beep='echo -e "\a"'
-
 # Packages Stuff
 alias agi='sudo apt-get install'
 alias agr='sudo apt-get remove'
@@ -119,29 +115,18 @@ alias sandbox='cd ~/Workspace/sandbox'
 alias cse='cd ~/Workspace/uwcse-files'
 alias res='cd ~/Workspace/res'
 alias dropbox='cd ~/Dropbox'
-alias 440='cd ~/Workspace/uwcse-files/CSE440/wi14'
-alias 461='cd ~/Workspace/uwcse-files/CSE461/wi14'
-
-# School stuff
-alias reg='./run cse461.cs.washington.edu 46101' # CSE 461 HW1
-
-# Pair programming
-alias jun='tmux -S /tmp/tmux-junpucublu attach -r' # CSE 461 with sunjayc
-
-# Dev server
-alias myserver='python -m SimpleHTTPServer 8000'
-
-# Ports
-alias 5555='nc -l 5555'
-
-# Easy access to files
 alias host='vim ~/etc/hosts'
 
-# Logs
-alias errorlogs='tail -f /var/log/apache2/error.log'
+# Pair programming
+alias jun='tmux -S /tmp/tmux-junpucublu attach -r' # with sunjayc
 
-# Python
+# Dev 
+alias gdb='gdb -tui'
+alias myserver='python -m SimpleHTTPServer 8000'
+alias 5555='nc -l 5555'
+alias errorlogs='tail -f /var/log/apache2/error.log'
 alias pypy='~/pypy-2.0-beta1/bin/pypy'
+alias gh='git checkout gh-pages && git rebase master && git push origin gh-pages && git checkout master'
 
 # Autojump
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
