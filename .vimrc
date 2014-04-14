@@ -54,12 +54,12 @@ hi javaParen2 guifg=#88BBBB
 
 let g:is_posix = 1 "Shell scripts highlighted as bash
 
-colorscheme fluffy
+colorscheme moria
 "Favourites:
   "Translucent Backgrounds
     "candy 
   "Solid Backgrounds
-    "bluez // calmar256-dark // fluffy // impact
+    "fluffy // bluez // calmar256-dark // fluffy // impact
 
 filetype on
 filetype plugin on
