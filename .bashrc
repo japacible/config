@@ -66,7 +66,6 @@ alias sublime='~/Sublime\ Text\ 2/sublime_text'
 
 # Browser
 alias chrome='/opt/google/chrome/chrome'
-alias browser=chrome
 alias chromehome='/usr/bin/google-chrome --blacklist-accelerated-compositing'
 
 # Chess 
@@ -114,9 +113,6 @@ alias sandbox='cd ~/Workspace/sandbox'
 alias cse='cd ~/Workspace/uwcse-files'
 alias dropbox='cd ~/Dropbox'
 alias host='vim ~/etc/hosts'
-
-# Pair programming
-alias jun='tmux -S /tmp/tmux-junpucublu attach -r' # with sunjayc
 
 # Dev 
 alias gdb='gdb -tui'
