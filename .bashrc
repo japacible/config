@@ -66,7 +66,6 @@ alias sublime='~/Sublime\ Text\ 2/sublime_text'
 
 # Browser
 alias chrome='/opt/google/chrome/chrome'
-alias browser=chrome
 alias chromehome='/usr/bin/google-chrome --blacklist-accelerated-compositing'
 
 # Chess 
@@ -152,15 +151,10 @@ alias yum='sudo yum'
 alias path='echo -e ${PATH//:/\\n}'
 
 # Common directories
-alias dante='cd ~/Workspace/dantes-inferno'
 alias sandbox='cd ~/Workspace/sandbox'
 alias cse='cd ~/Workspace/uwcse-files'
-alias res='cd ~/Workspace/res'
 alias dropbox='cd ~/Dropbox'
 alias host='vim ~/etc/hosts'
-
-# Pair programming
-alias jun='tmux -S /tmp/tmux-junpucublu attach -r' # with sunjayc
 
 # Dev 
 alias gdb='gdb -tui'
@@ -176,24 +170,25 @@ alias gh='git checkout gh-pages && git rebase master && git push origin gh-pages
 # Extraction
 function extract()
 {
-     if [ -f $1 ] ; then
-         case $1 in
-             *.tar.bz2)   tar xvjf $1     ;;
-             *.tar.gz)    tar xvzf $1     ;;
-             *.bz2)       bunzip2 $1      ;;
-             *.rar)       unrar x $1      ;;
-             *.gz)        gunzip $1       ;;
-             *.tar)       tar xvf $1      ;;
-             *.tbz2)      tar xvjf $1     ;;
-             *.tgz)       tar xvzf $1     ;;
-             *.zip)       unzip $1        ;;
-             *.Z)         uncompress $1   ;;
-             *.7z)        7z x $1         ;;
-             *)           echo "'$1' cannot be extracted via >extract<" ;;
-         esac
-     else
-         echo "'$1' is not a valid file"
-     fi
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xvjf $1     ;;
+      *.tar.gz)    tar xvzf $1     ;;
+      *.bz2)       bunzip2 $1      ;;
+      *.rar)       unrar x $1      ;;
+      *.gz)        gunzip $1       ;;
+      *.tar)       tar xvf $1      ;;
+      *.tbz2)      tar xvjf $1     ;;
+      *.tgz)       tar xvzf $1     ;;
+      *.zip)       unzip $1        ;;
+      *.Z)         uncompress $1   ;;
+      *.7z)        7z x $1         ;;
+      *)
+      echo "'$1' cannot be extracted via >extract<" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
 }
 
 function setcount() {
