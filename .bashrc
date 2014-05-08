@@ -156,6 +156,7 @@ alias sandbox='cd ~/Workspace/sandbox'
 alias cse='cd ~/Workspace/uwcse-files'
 alias dropbox='cd ~/Dropbox'
 alias host='vim ~/etc/hosts'
+alias flatline='cd /cse/ugrad-org/acm/www/'
 
 # Dev 
 alias gdb='gdb -tui'
