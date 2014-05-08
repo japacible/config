@@ -8,7 +8,7 @@ if [ -f /mnt/vol/engshare/admin/scripts/master.bashrc ]; then
 fi
 
 # Hello, Apacible! :D
-echo 'Greetings, jenpa!'
+echo 'Howdy, jenpa!'
 echo ""`date "+%I:%M %p, %A %B %d, %Y"`.
 echo ''
 
@@ -17,6 +17,7 @@ PATH="/usr/local/heroku/bin:$PATH"
 PATH="/usr/local/jdk-7u4-64/bin:$PATH"
 PATH="/usr/local/bin/rails:$PATH"
 PATH="$HOME/local/bin:$PATH"
+PATH="$HOME/.android:$PATH"
 
 export PATH
 export CLASSPATH=.:sqljdbc4.jar
