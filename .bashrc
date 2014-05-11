@@ -198,3 +198,7 @@ function setcount() {
 }
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Git Achievements
+#export PATH="~/Workspace/git-achievements:$PATH"
+#alias git="git-achievements"
