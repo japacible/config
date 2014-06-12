@@ -165,7 +165,6 @@ alias 5555='nc -l 5555'
 alias errorlogs='tail -f /var/log/apache2/error.log'
 alias pypy='~/pypy-2.0-beta1/bin/pypy'
 alias gh='git checkout gh-pages && git rebase master && git push origin gh-pages && git checkout master'
-alias uimaster='git checkout master && git rebase ui-design && git push origin master && git checkout ui-design'
 
 # Autojump
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
