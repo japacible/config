@@ -8,7 +8,7 @@ if [ -f /mnt/vol/engshare/admin/scripts/master.bashrc ]; then
 fi
 
 # Hello, Apacible! :D
-echo 'Howdy, jenpa!'
+echo 'Ohai, jenpa!'
 echo ""`date "+%I:%M %p, %A %B %d, %Y"`.
 echo ''
 
@@ -153,7 +153,6 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # Common directories
 alias sandbox='cd ~/Workspace/sandbox'
-alias cse='cd ~/Workspace/uwcse-files'
 alias dropbox='cd ~/Dropbox'
 alias host='vim ~/etc/hosts'
 alias flatline='cd /cse/ugrad-org/acm/www/'
