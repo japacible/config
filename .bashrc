@@ -190,6 +190,7 @@ function extract()
   fi
 }
 
+# Sorts a list of strings (by new line) alphabetically
 function setcount() {
   sort $1 | uniq -c | sort -n -r
 }
