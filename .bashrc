@@ -8,7 +8,7 @@ if [ -f /mnt/vol/engshare/admin/scripts/master.bashrc ]; then
 fi
 
 # Hello, Apacible! :D
-echo 'Howdy, jenpa!'
+echo 'Ohai, jenpa!'
 echo ""`date "+%I:%M %p, %A %B %d, %Y"`.
 echo ''
 
@@ -149,7 +149,6 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # Common directories
 alias sandbox='cd ~/Workspace/sandbox'
-alias cse='cd ~/Workspace/uwcse-files'
 alias dropbox='cd ~/Dropbox'
 alias host='vim ~/etc/hosts'
 alias flatline='cd /cse/ugrad-org/acm/www/'
@@ -157,8 +156,6 @@ alias flatline='cd /cse/ugrad-org/acm/www/'
 # Dev 
 alias gdb='gdb -tui'
 alias myserver='python -m SimpleHTTPServer 8000'
-alias 5555='nc -l 5555'
-alias errorlogs='tail -f /var/log/apache2/error.log'
 alias pypy='~/pypy-2.0-beta1/bin/pypy'
 alias gh='git checkout gh-pages && git rebase master && git push origin gh-pages && git checkout master'
 
@@ -189,6 +186,7 @@ function extract()
   fi
 }
 
+# Sorts a list of strings (by new line) alphabetically
 function setcount() {
   sort $1 | uniq -c | sort -n -r
 }

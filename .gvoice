@@ -1,7 +1,6 @@
-
 [auth]
 # Google Account email address (one associated w/ your Voice account)
-email=
+email=japacible@gmail.com
 
 # Raw password used or login
 password=
