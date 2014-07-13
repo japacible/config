@@ -18,6 +18,7 @@ PATH="/usr/local/jdk-7u4-64/bin:$PATH"
 PATH="/usr/local/bin/rails:$PATH"
 PATH="$HOME/local/bin:$PATH"
 PATH="$HOME/.android:$PATH"
+PATH="/usr/share/npm:$PATH"
 
 export PATH
 export CLASSPATH=.:sqljdbc4.jar
