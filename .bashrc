@@ -8,7 +8,7 @@ if [ -f /mnt/vol/engshare/admin/scripts/master.bashrc ]; then
 fi
 
 # Hello, Apacible! :D
-echo 'Howdy, jenpa!'
+echo 'Ohai, jenpa!'
 echo ""`date "+%I:%M %p, %A %B %d, %Y"`.
 echo ''
 
@@ -80,10 +80,6 @@ alias os='uname -srm'
 alias now='date'
 alias whoami='pwd'
 
-# SSH UW
-alias dante='ssh apacible@dante.u.washington.edu'
-alias dante11='ssh apacible@dante11.u.washington.edu'
-
 # SSH UW CSE
 alias acho='ssh apacible@acho.cs.washington.edu'
 alias acme='ssh apacible@acme.cs.washington.edu'
@@ -154,7 +150,6 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # Common directories
 alias sandbox='cd ~/Workspace/sandbox'
-alias cse='cd ~/Workspace/uwcse-files'
 alias dropbox='cd ~/Dropbox'
 alias host='vim ~/etc/hosts'
 alias flatline='cd /cse/ugrad-org/acm/www/'
@@ -192,6 +187,7 @@ function extract()
   fi
 }
 
+# Sorts a list of strings (by new line) alphabetically
 function setcount() {
   sort $1 | uniq -c | sort -n -r
 }
