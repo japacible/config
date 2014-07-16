@@ -152,6 +152,8 @@ alias path='echo -e ${PATH//:/\\n}'
 alias sandbox='cd ~/Workspace/sandbox'
 alias dropbox='cd ~/Dropbox'
 alias host='vim ~/etc/hosts'
+
+# CSE
 alias flatline='cd /cse/ugrad-org/acm/www/'
 
 # Dev 
