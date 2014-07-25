@@ -74,7 +74,6 @@ alias chromehome='/usr/bin/google-chrome --blacklist-accelerated-compositing'
 alias fics='xboard -ics -icshost freechess.org' #FICS
 
 # Tell Me
-alias speed='python2.7 ~/scripts/speedtest-cli/speedtest-cli'
 alias ip='wget -qO- icanhazip.com'
 alias os='uname -srm'
 alias now='date'
