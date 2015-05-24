@@ -45,14 +45,14 @@ alias shutdown='sudo shutdown -h now'
 alias reload='. ~/.bashrc'
 
 # Color Everything
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias grep='grep --color=auto'
-alias ls='ls --color=auto'
-alias 'la'='ls -a --color=auto'
-alias 'll'='ls -alF --color=auto'
-alias 'l'='ls -cF --color=auto'
-alias 'lt'='ls -lt --color=auto'
+alias egrep='egrep -G'
+alias fgrep='fgrep -G'
+alias grep='grep -G'
+alias ls='ls -G'
+alias 'la'='ls -aG'
+alias 'll'='ls -alFG'
+alias 'l'='ls -cFG'
+alias 'lt'='ls -ltG'
 
 # Navigation
 alias ..='cd ..'
