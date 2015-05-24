@@ -10,7 +10,10 @@ fi
 # Hello, Apacible! :D
 echo 'Ohai, jenpa!'
 echo ""`date "+%I:%M %p, %A %B %d, %Y"`.
-echo ''
+echo "$USER: $PWD"
+
+PROMPT_COMMAND=''
+PS1='> '
 
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 PATH="/usr/local/heroku/bin:$PATH"
